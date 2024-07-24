@@ -1,0 +1,15 @@
+.form{
+    background-color: aliceblue;
+    width: 900px;
+    height: 500px;
+}
+
+.title{
+    color: black;
+    font-family: sans-serif;
+
+}
+
+.input{
+    width: 100px;
+}

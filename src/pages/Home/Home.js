@@ -5,8 +5,6 @@ function Home() {
     return (
         <div className="container">
             <h1 className="title">Grego Comercial Ltda</h1>
-            <div className="button-container">
-            </div>
         </div>
     );
 }

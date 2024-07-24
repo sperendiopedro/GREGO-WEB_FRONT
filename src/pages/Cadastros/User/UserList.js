@@ -1,7 +1,16 @@
+import { useState, useEffect } from "react";
 
-function Tabela({vetor}){  
-    return(
-        
+function UserList(){  
+    const[user, setUser] = useState([]); 
+   
+    useEffect(() => {
+        fetch("http://localhost:8080/user/list")
+        .then(response => response.json())
+        .then(data => setUser(data));
+    },[])
+
+    
+    return(   
         <table className="table">
             <thead>
                 <tr>
@@ -12,14 +21,12 @@ function Tabela({vetor}){
                     <th>Email</th>
                     <th>Senha</th>
                     <th>Permissões</th>
-                    <th>Selecionar</th>
+                    <th></th>
                 </tr>
-
             </thead>
-
             <tbody>
                 {
-                    vetor.map((obj, indice) => (
+                    user.map((obj, indice) => (
                     <tr key={indice}>
                         <td>{indice+1}</td>
                         <td>{obj.id}</td>
@@ -36,4 +43,4 @@ function Tabela({vetor}){
         </table>
     );
 }
-export default Tabela; 
+export default UserList; 

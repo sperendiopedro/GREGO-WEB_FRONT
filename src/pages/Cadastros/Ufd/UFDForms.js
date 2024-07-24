@@ -1,17 +1,17 @@
 import { useState } from "react";
-
+import "./ufd.css"; 
 function UFDForms() {
     const [objUfd, setObjUfd] = useState({
         nome: '',
         sigla: '', 
-        aliqIcms: 0 // Default value as a number
+        aliqIcms: 0 
     });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setObjUfd(prevState => ({
             ...prevState,
-            [name]: name === 'aliqIcms' ? Number(value) : value // Ensure aliqIcms is a number
+            [name]: name === 'aliqIcms' ? Number(value) : value 
         }));
     };
 
@@ -31,7 +31,7 @@ function UFDForms() {
             setObjUfd({
                 nome: '',
                 sigla: '',
-                aliqIcms: 0 // Reset to number
+                aliqIcms: 0 
             });
         } else {
             console.error('Failed to register UFD');
@@ -42,13 +42,13 @@ function UFDForms() {
         setObjUfd({
             nome: '',
             sigla: '',
-            aliqIcms: 0 // Reset to number
+            aliqIcms: 0 
         });
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <h1>Registro de UFD</h1>
+        <form className="form" onSubmit={handleSubmit}>
+            <h1 className="title" color="black">Registro de UFD</h1>
             <input 
                 type="text" 
                 name="nome"

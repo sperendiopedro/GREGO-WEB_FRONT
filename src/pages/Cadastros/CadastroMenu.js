@@ -1,9 +1,11 @@
-
+import "./Menu.css" 
 function CadastroMenu(){
     return(
-        <div> 
+        <div className="container"> 
+        <h1 className="title"> Cadastros gerais </h1>    
+        <input type="button" value="Unidade Federal" onClick={"/ufd/register"}/>
         
-        <h1> MENU DE CADASTROS </h1>    
+        
         </div>
     )
 }
