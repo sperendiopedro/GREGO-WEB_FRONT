@@ -14,7 +14,7 @@ function RoutesApp(){
         <BrowserRouter>
         <Header/>
         <Routes> 
-            <Route path="/home" element={<Home/>}/>
+            <Route path="/" element={<Home/>}/>
             <Route path="/cadastros" element={<CadastroMenu/>}/>
             <Route path="/user/register" element={<UserForms/>}/>    
             <Route path="/user/list" element={<UserList/>}/> 

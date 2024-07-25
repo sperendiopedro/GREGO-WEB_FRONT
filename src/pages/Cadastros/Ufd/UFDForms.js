@@ -48,7 +48,7 @@ function UFDForms() {
 
     return (
         <form className="form" onSubmit={handleSubmit}>
-            <h1 className="title" color="black">Registro de UFD</h1>
+            <h1 className="title">Registro de UFD</h1>
             <input 
                 type="text" 
                 name="nome"
@@ -66,7 +66,7 @@ function UFDForms() {
                 onChange={handleChange}
             /> 
             <input 
-                type="number" 
+                type="text" 
                 name="aliqIcms"
                 placeholder="Aliq_ICMS" 
                 className="form-control" 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import "./List.css"; 
 function UserList(){  
     const[user, setUser] = useState([]); 
    
