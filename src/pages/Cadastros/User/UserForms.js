@@ -1,3 +1,4 @@
+import "./List.css"
 import { useState } from "react";
 
 function UserForms({ botao }) {
@@ -47,9 +48,23 @@ function UserForms({ botao }) {
         });
     };
 
+    const cancel = ()=>{
+        setObjUser(
+            {
+                nome: '', 
+                setor: '',
+                email: '',
+                psswd: '',
+                userRole: ''
+            });
+    };
+
+
+
     return (    
        <form>
-            <h1>Registro de usuário:</h1>
+            <h1 className="title">Registro de usuário:</h1>
+            <br></br>
             <input 
                 type="text" 
                 onChange={aoDigitar} 
@@ -90,31 +105,21 @@ function UserForms({ botao }) {
                 placeholder="Permissões" 
                 className="form-control"
             />
-            {
-                botao
-                ? (
-                    <input 
-                        type="button" 
-                        value="Inserir" 
-                        onClick={cadastrar} 
-                        className="btn btn-primary" 
-                    /> 
-                ) : (
-                    <div>
-                        <input 
-                            type="button" 
-                            value="Inserir" 
-                            className="btn btn-primary" 
-                            onClick={cadastrar}
-                        /> 
-                        <input 
-                            type="button" 
-                            value="Cancelar" 
-                            className="btn btn-secondary"
-                        />
-                    </div>
-                )
-            }
+                
+            <input 
+                type="button" 
+                value="Inserir" 
+                onClick={cadastrar} 
+                className="btn btn-primary" 
+            /> 
+    
+            <input 
+                type="button" 
+                value="Cancelar" 
+                onClick={cancel}
+                className="btn btn-secondary"
+            />
+
         </form>
     )
 }

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./ufd.css"; 
+
+
 function UFDForms() {
     const [objUfd, setObjUfd] = useState({
         nome: '',
@@ -49,6 +51,7 @@ function UFDForms() {
     return (
         <form className="form" onSubmit={handleSubmit}>
             <h1 className="title">Registro de UFD</h1>
+            <br></br>
             <input 
                 type="text" 
                 name="nome"

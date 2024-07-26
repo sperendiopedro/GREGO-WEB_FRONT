@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import CadastroMenu from "./pages/Cadastros/CadastroMenu";
 import UFDList from "./pages/Cadastros/Ufd/UFDList";
 import UserList from "./pages/Cadastros/User/UserList";
+import EmpForms from "./pages/Cadastros/Empresa/EmpForms";
 
 function RoutesApp(){
   
@@ -20,6 +21,7 @@ function RoutesApp(){
             <Route path="/user/list" element={<UserList/>}/> 
             <Route path="//ufd/register" element={<UFDForms/>}/>
             <Route path="/ufd/list" element={<UFDList/>}/>
+            <Route path="/empresa/register" element={<EmpForms/>}/>
         </Routes>
         </BrowserRouter>
     )

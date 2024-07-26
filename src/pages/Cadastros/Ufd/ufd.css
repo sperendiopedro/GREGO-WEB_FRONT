@@ -1,14 +1,19 @@
+.titulo{
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
 .form{
     width: 600px;
     height: 300px;
 }
 
-.title{
-    color: black;
-    font-family: sans-serif;
-
-}
-
 .input{
     width: 100px;
 }
+
+.btn{
+    margin-top: 15px;
+    margin-left: 25px;
+  }

@@ -1,4 +1,3 @@
-
 .title{
     text-align: center;
     font-size: 45px;
@@ -11,11 +10,11 @@
     text-align: center;
 }
 
-.table{
-    background-color: aqua;
-}
-
 .btn{
     margin-top: 15px;
     margin-left: 25px;
   }
+
+select {
+    margin: 10px 0; 
+}
