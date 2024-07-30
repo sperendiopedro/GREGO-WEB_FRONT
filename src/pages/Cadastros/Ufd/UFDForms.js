@@ -50,6 +50,7 @@ function UFDForms() {
 
     return (
         <form className="form" onSubmit={handleSubmit}>
+            <p>{JSON.stringify.objUfd}</p>
             <h1 className="title">Registro de UFD</h1>
             <br></br>
             <input 
