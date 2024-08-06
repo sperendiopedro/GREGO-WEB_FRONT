@@ -8,6 +8,7 @@ import UFDList from "./pages/Cadastros/Ufd/UFDList";
 import UserList from "./pages/Cadastros/User/UserList";
 import EmpForms from "./pages/Cadastros/Empresa/EmpForms";
 import Fornec from "./pages/Cadastros/Fornecedor/Fornec";
+import Login from "./pages/Login/Login";
 
 function RoutesApp(){
   
@@ -16,6 +17,7 @@ function RoutesApp(){
         <BrowserRouter>
         <Header/>
         <Routes> 
+            <Route path="/login" element={<Login/>}/>
             <Route path="/" element={<Home/>}/>
             <Route path="/cadastros" element={<CadastroMenu/>}/>
             <Route path="/user/register" element={<UserForms/>}/>    
